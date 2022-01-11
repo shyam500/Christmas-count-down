@@ -1,0 +1,63 @@
+:root {
+  --main_font: "poppins", "Segoe UI", Tahoma, Verdana;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: var(--main_font);
+}
+
+#container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../images/xmas.jpg") no-repeat fixed center;
+  color: white;
+  overflow: hidden;
+}
+
+#head {
+  text-align: center;
+  font-size: 6.1rem;
+}
+
+#out {
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.box {
+  min-width: 200px;
+  padding: 1.5rem 0rem;
+}
+
+.num {
+  font-size: 2.8rem;
+}
+
+@media screen and (max-width: 760px) {
+  #head {
+    font-size: 4.1rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  #head {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+    #head {
+      font-size: 2.2rem;
+    }
+  }
