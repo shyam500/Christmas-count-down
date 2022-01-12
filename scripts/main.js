@@ -10,7 +10,7 @@ function countDown() {
     let seconds = (xmas.getTime() - date.getTime()) / 1000;
     
     dispFunc(days, seconds / 3600 / 24);
-    dispFunc(hours,Math.abs(12 - (date.getHours()-12)))
+    dispFunc(hours,Math.abs(12 - (date.getHours()-12))===0?12:Math.abs(12 - (date.getHours()-12)));
     dispFunc(min, (seconds / 60) % 60);
     dispFunc(sec, (seconds % 60));
 
